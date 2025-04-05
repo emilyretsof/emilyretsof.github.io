@@ -30,11 +30,11 @@
 
 }
 
-.card-left h1 {
+.name {
   line-height: normal;
   color:#7da783;
-  letter-spacing: 4;
-  font-size: 55;
+  letter-spacing: 4x;
+  font-size: 55x;
 }
 
 .card-left .bio {
@@ -48,7 +48,6 @@
   font-size: 16px;
   color: #555;
 }
-
 
 .calendly-wrapper {
   display: flex;
@@ -140,9 +139,12 @@ p {
     justify-content: center; /* center on mobile */
   }
 
+  .bio, .notary-info, .name {
+    text-align: center; /* center on mobile */
+  }
   .card-left {
     position: static; /* Makes it scroll with the page */
-    width: 90%; /* Takes full width */
+    width: 75%; /* Takes full width */
     line-height: 1.3; /* tighter spacing on mobile */
   }
 

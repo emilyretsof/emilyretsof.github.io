@@ -8,7 +8,7 @@ const Home = () => {
 
       <div className="card">
         <div className="card-left">
-          <h1>EMILY FOSTER.</h1>
+          <p className="name">EMILY FOSTER.</p>
 
           {/* Bio line */}
           <p className="bio">Freelance Notary · Researcher · UCLA Linguistics & Computer Science</p>
