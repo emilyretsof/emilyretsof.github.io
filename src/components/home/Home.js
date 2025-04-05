@@ -9,7 +9,28 @@ const Home = () => {
       <div className="card">
         <div className="card-left">
           <h1>EMILY FOSTER.</h1>
-          <p>Linguistics & Computer Science @UCLA</p>
+
+          {/* Bio line */}
+          <p className="bio">Freelance Notary · Researcher · UCLA Linguistics & Computer Science</p>
+
+          {/* Notary context */}
+          <p className="notary-info">
+            I'm a certified notary public available for general notarial work, loan signings, and more across Los Angeles.<br /><br />
+            Rates start at <strong>$15 per signature</strong>, with a <strong>$25 travel fee</strong> within West LA.
+          </p>
+
+          {/* Booking link */}
+          <div className="calendly-wrapper">
+            <a
+              href="https://calendly.com/your-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="calendly-link"
+            >
+              Book a Notary Appointment
+            </a>
+          </div>
+
         </div>
 
       {/* Right card with scrollable content */}
