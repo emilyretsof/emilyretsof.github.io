@@ -136,7 +136,6 @@ p {
 }
 
 @media (max-width: 768px) {
-
   .calendly-wrapper {
     justify-content: center; /* center on mobile */
   }
