@@ -33,8 +33,9 @@
 .name {
   line-height: normal;
   color:#7da783;
-  letter-spacing: 4x;
-  font-size: 55x;
+  letter-spacing: 4px;
+  font-size: 55px;
+  font-weight: 700;
 }
 
 .card-left .bio {
@@ -139,7 +140,7 @@ p {
     justify-content: center; /* center on mobile */
   }
 
-  .bio, .notary-info, .name {
+  .bio, .notary-info, .name{
     text-align: center; /* center on mobile */
   }
   .card-left {
