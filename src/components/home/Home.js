@@ -22,7 +22,7 @@ const Home = () => {
           {/* Booking link */}
           <div className="calendly-wrapper">
             <a
-              href="https://calendly.com/your-link"
+              href="https://calendly.com/emilyretsof/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="calendly-link"
@@ -42,7 +42,8 @@ const Home = () => {
             <div className="card-description">
               <h2>UCLA SOCIAL SCIENCE COMPUTING </h2>
               <h3>Technology Consultant</h3>
-              <p>Troubleshoot hardware and software issues on Windows and Mac systems for Social Sciences department staff and assist in setting up equipment such as computers and projectors for meetings, events, and classroom settings.</p>
+              <p>Troubleshoot hardware and software issues on Windows and Mac systems for Social Sciences department staff and assist 
+                in setting up equipment such as computers and projectors for meetings, events, and classroom settings.</p>
             </div>
           </div>
           <div className="card-item">
@@ -52,7 +53,9 @@ const Home = () => {
             <div className="card-description">
               <h2>BANK OF SINGAPORE</h2>
               <h3>Data Science & Advanced Analytics Intern</h3>
-              <p>Established project roadmap and delegated tasks to another intern, ensuring timely progress and alignment with project objectives. Enhanced unstructured data storage and retrieval for portfolio commentary across 1,000+ clients, achieving estimated annual cost savings of $302.4k</p>
+              <p>Established project roadmap and delegated tasks to another intern, ensuring timely progress and alignment with 
+                project objectives. Enhanced unstructured data storage and retrieval for portfolio commentary across 1,000+ clients, 
+                achieving estimated annual cost savings of $302.4k</p>
             </div>
           </div>
           <div className="card-item">
@@ -60,12 +63,11 @@ const Home = () => {
               <span>Jan 2024 <br /> - <br /> Present</span> 
             </div>
             <div className="card-description">
-              <h2>CENTER ON EVERYDAY LIVES OF FAMILIES </h2>
+              <h2>UCLA CENTER ON EVERYDAY LIVES OF FAMILIES (CELF)</h2>
               <h3>Principal Investigator </h3>
-              <p>Automated extraction from 100+ unstructured transcripts, standardized data for sentiment analysis, and used SQL for storing and querying processed data
-                Model Fine-Tuning (RoBERTa, PyTorch): Fine-tuned sentiment analysis model on SWBD senti dataset, improving
-                accuracy from 50% to 70% on naturalistic speech, optimizing hyperparameters in relation to key performance metrics
-                Developed a manual segment labeling scheme to assess model performance</p>
+              <p>Conducted research using data from the UCLA Sloan CELF lab. Automated extraction and sentiment analysis of 100+ unstructured transcripts. 
+                Fine-tuned sentiment analysis model on SWBD-Senti dataset, improving accuracy from 50% to 70% on naturalistic speech, optimizing 
+                hyperparameters in relation to key performance metrics. Developed a manual segment labeling scheme to assess model performance</p>
             </div>
           </div>
           <div className="card-item">
@@ -76,7 +78,7 @@ const Home = () => {
                 <h2>BRUIN LINGUISTS SOCIETY </h2>
                 <h3>President & Lead Developer </h3>
                 <p>Developed website with Firebase and React for abstract submissions; established and managed Git
-                  repository and version control. Leading recruitment and expansion of the development team to enhance website functionality and
+                  repository and version control. Lead recruitment and expansion of the development team to enhance website functionality and
                   deploy hosting infrastructure for research projects.</p>
               </div>
             </div>
