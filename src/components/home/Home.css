@@ -1,5 +1,4 @@
 .page-container {
-  background-color: rgb(242, 242, 242); /* Background color behind the card */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,80 +6,91 @@
 }
 
 .card {
+  background: transparent;
   display: flex;
-  background-color: rgb(245, 245, 245);
   border-radius: 0px;
-  width: clamp(300px, 85%, 1200px); /* Minimum 300px, preferred 85%, maximum 1200px */
-  /* height: 87%;  */
-  height: clamp(300px, 85%, 1200px); /* Minimum 300px, preferred 85%, maximum 1200px */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: clamp(300px, 85%, 1200px);
+  flex-direction:column;
+  height: clamp(300px, 85%, 1200px); 
+  box-shadow: 0 4px 8px #00000033;
   font-family: "Raleway", Helvetica, sans-serif;
 }
 
 
-.card-left {
-  width: 30%;
-  position: sticky;
-  top: 0;
+.card-top {
+  width: 100%;
   background-color: transparent;
-  color: rgb(32, 34, 33);
-  letter-spacing: 1;
-  line-height: 2;
-  text-align: left;
-  margin-left: 50px; 
-  margin-top: 10px;
-  height: 100%; 
-  overflow-y: auto;
-  font-size: 20px;
   color: #555;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.card-bottom {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Prevent double scrollbars */
+}
+
+.about-section{
+  line-height: 2;
+  font-size: 14;
+  text-align: left;
+  margin-right: 100px;
+  margin-top: 45px;
+}
+.experience-section, .project-section{
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.experience-section h1, .project-section h1 {
+  color: #555;
+  font-weight: 100;
+  font-size: 30;
+  margin: 0;
+  letter-spacing: 1;
+  text-align: left;
 }
 
 .name {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: normal;
-  color: #a3bba3;
+  color: #7e8f7e;
   letter-spacing: 4px;
-  font-size: 32px;
+  font-size: 50px;
   margin-top: 50px;
-  text-align: left;
-  margin-left: 50px;
 }
 
 .card-right {
-  width: 70%;
+  width: 80%;
   overflow-y: scroll; /* Allows scrolling on the right side */
   height: 100%;
   color:#555555;
   line-height: 2;
+  margin-left: 150px; /* Space between date and description */
 }
 
 .card-right::-webkit-scrollbar {
   display: none; /* Hide the scrollbar in WebKit browsers */
 }
 
-.about-item {
-  text-align: left;
-  margin-top: 65px; 
-  margin-bottom: 65px; 
-  margin-right: 40px; 
-  margin-left: 65px; 
-
-}
-
 .card-item {
   display: flex; /* Use flexbox to lay out the date and description side by side */
   background-color: transparent;
-  padding: 20px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  margin-top:20px;
+  margin-bottom:20px;
 }
 
 .card-date {
   width: 20%; 
   font-size: 1.1rem; /* Adjust font size for date */
   font-weight: bold;
-  color: #a3bba3;
+  color: #7e8f7e;
   margin-right: 20px; /* Space between date and description */
+  text-align: left;
 }
 
 .card-description {
@@ -89,8 +99,8 @@
 }
 
 .card-description h2 {
-  color: #a3bba3;
-  font-size: 22;
+  color: #7e8f7e;
+  font-size: 20;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -107,14 +117,7 @@
   margin-top: 10px;
   line-height: 1.5;
   font-size: 14;
-}
-
-.left-box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 2rem;
-  color: white;
+  margin-right: 100px;
 }
 
 h1, h3 {
@@ -127,7 +130,46 @@ p {
 }
 
 /* Sidebar */
+.card-left {
+  width: 20%;
+  background-color: transparent;
+  letter-spacing: 1;
+  line-height: 3;
+  text-align: left;
+  overflow-y: auto;
+  font-size: 20px;
+}
+
 .side-menu {
+    position: sticky;
+    color:#555555;
+    width: 150px;
+    font-size: 18px;
+    margin-left: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    list-style: none;
+}
+
+.side-menu li a {
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color:#444444;
+    display: block;
+    padding: 8px;
+    transition: background 0.3s;
+}
+
+.side-menu li a:hover{
+  font-weight:400;
+}
+
+.side-menu li a.active {
+  color: #2c462f; 
+  font-weight:400;
+}
+.activeSection {
     position: sticky;
     color:#555555;
     top: 200px;
@@ -138,45 +180,8 @@ p {
     margin-left: 30px;
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
-}
-
-.side-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.side-menu ul li {
-    margin-bottom: 10px;
-    align-items: center;
-    gap: 8px;
-}
-.side-link{
-    margin-bottom: 10px;
-    align-items: center;
-    gap: 8px;
-    text-decoration: underline;
-    color:#444444;
-    display: block;
-    padding: 8px;
-}
-.side-link:hover{
-  color:#2c462f;
-}
-
-.side-menu ul li a {
-    text-decoration: none;
-    color:#444444;
-    display: block;
-    padding: 8px;
-    transition: background 0.3s;
-}
-.side-menu ul li a.active {
-  color: #2c462f; 
-}
-
-.side-menu ul li a:hover {
-    color: #466d4c;
-
+    color: #2c462f; 
+    font-weight:400;
 }
 
 @media (max-width: 768px) {
@@ -195,3 +200,4 @@ p {
   }
 
 }
+
